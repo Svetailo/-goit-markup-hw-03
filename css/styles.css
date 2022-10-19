@@ -16,27 +16,74 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;}
 
-  .link{ text-decoration: none;}
+    .container{ width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+/*     
+    outline: 2px solid tomato; */
+  }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul {margin: 0;
+    padding: 0;}
+
+    
+
+  .link{ text-decoration: none; }
   .list{list-style: none;}
 
-  .logo{font-family: 'Raleway';
+  .logo{display: block;
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: #000000;}
+    color: #000000;
+  }
+
+  .logo-nav{padding-top: 24px;
+    padding-bottom: 25px;}
 
     /* navigation */
-.nav-link {font-weight: 500;
+.nav-link {
+  display: block; font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primaty-text-color);}
+    color: var(--primaty-text-color);
+  padding-top: 32px;
+padding-bottom: 32px;}
 
-.auth-link {font-weight: 500;
+    .header-nav{display: flex;
+    gap: 93px;}
+
+    .header-container{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #ECECEC;
+  }
+    .site-nav{display: flex;
+    gap: 50px;
+  align-items: center;}
+
+  .nav-list{display: flex;
+  gap: 50px;}
+.auth-link {display: block;
+  font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: var(--second-text-color);}
+color: var(--second-text-color);
+padding: 32px 0;}
 
 .nav-link:hover,
 .nav-link:focus {color: var(--button-primary-background-color);}
@@ -57,12 +104,18 @@ color: var(--second-text-color);}
 
   .hero-title{font-family: 'Roboto';
     font-weight: 900;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-text-color)}
-
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--white-text-color) }
+    
+    
 /* button  hero and portfolio */
 
 .hero-button:hover,
@@ -74,6 +127,10 @@ color: var(--second-text-color);}
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 4px;
     letter-spacing: 0.06em;background-color: var(--button-primary-background-color);
     color: var(--white-text-color)}
 
@@ -84,6 +141,9 @@ color: var(--second-text-color);}
     line-height: 1.63;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border: 0px solid transparent;
+    padding: 6px 22px;
+    border-radius: 4px;
 color: var(--primaty-text-color);
 background-color: var(--button-secondary-background-color)}
 
@@ -92,6 +152,12 @@ background-color: var(--button-secondary-background-color)}
     background-color: var(--button-primary-background-color);
 }
 /* visually-hidden */
+
+
+.preference-list{display: flex;
+gap: 30px;}
+
+
 .visually-hidden {
     position: absolute;
       white-space: nowrap;
@@ -109,6 +175,7 @@ background-color: var(--button-secondary-background-color)}
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 10px;
     }
 
     .preference-text{
@@ -118,46 +185,63 @@ color: var(--second-text-color);
     }
 
     /* activity */
+
+.activity-list{display: flex;
+gap: 30px;}
+
     .section-title{
         font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
+text-align: center;
+margin-bottom: 50px;
+
     }
 
     /* team */
-.team-card{background-color: var(--primary-background-color);}
+    .team{background-color:var(--second-background-color)}
+.team-card{
+  
+  background-color: var(--primary-background-color);}
+
+  .imeg{display: block;
+    max-width: 100%;
+    height: auto;}
+
+.team-list{display: flex;
+gap: 30px;}
 
    .team-subtitle {
     font-weight: 500;
 font-size: 16px;
-line-height: 1.19;}
+line-height: 1.19;
+text-align: center;
+margin-top: 30px;}
+
 .team-text{
     font-size: 16px;
-    line-height: 1.19;}
-/* portfolio */
-.portfolio-subtitle{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--primaty-text-color);
-}
-.portfolio-text{font-size: 16px;
-    line-height: 1.88;
-    color: var(--second-text-color);
-}
+    line-height: 1.19;
+    text-align: center;
+  margin-top: 10px;}
+
 
 /* footer */
-.cellar{background-color: var(--footer-background-color);}
+.cellar{
+  background-color: var(--footer-background-color);}
+.web-doun{
+  padding:  60px 15px;}
 
-.adress{font-style: normal;
+.adress{display: block; font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 20px;
   color: var(--white-text-color)}
 
 .adress-link{font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 9px;
+    display: block;
     color: var(--footer-link-color);}
 
 .adress-link:hover,
@@ -167,16 +251,58 @@ line-height: 1.19;}
 .adress:focus{color: var(--accent-text-color);}
 
 /* portfolio */
+/* portfolio */
+
+
+
 
 .portfolio-subtitle{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em}
+    letter-spacing: 0.06em;
+    color: var(--primaty-text-color);
+}
+.portfolio-text{font-size: 16px;
+    line-height: 1.88;
+    margin-top: 4px;
+    color: var(--second-text-color);
+}
 
-    .portfolio-text{
+.portfolio-btn{display: flex;
+  justify-content: center;
+gap: 8px;}
+
+
+.portfolio-list{display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin-top: 34px;
+padding-left: 0;
+padding-right: 0;}
+
+.flex-portfolio{padding-left: 0;
+padding-right: 0;}
+
+.element-portfolio{
+  outline: 1px solid var(--second-background-color);
+}
+
+.portfolio-content{padding: 20px 24px;}
+
+
+/* .portfolio-subtitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em} */
+
+    /* .portfolio-text{
 font-size: 16px;
 line-height: 1.88;
 color: var(--second-text-color);
-    }
+    } */
+
+    
+  
 
