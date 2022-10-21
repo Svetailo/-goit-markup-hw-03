@@ -9,7 +9,8 @@
     --primary-background-color:#FFFFFF;
     --second-background-color: #F5F4FA;
     --button-primary-background-color: #2196f3;
-    --button-secondary-background-color: #f5f4fa;}
+    --button-secondary-background-color: #f5f4fa;
+  --secondary-background-color-hero-butto:#188CE8;}
   body{
     background-color: var(--primary-background-color);
     color: var(--primaty-text-color);
@@ -68,11 +69,13 @@ padding-bottom: 32px;}
     .header-nav{display: flex;
     gap: 93px;}
 
+    .page-header{border-bottom: 1px solid #ECECEC;}
+
     .header-container{display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    border-bottom: 1px solid #ECECEC;
+    
   }
     .site-nav{display: flex;
     gap: 50px;
@@ -124,7 +127,7 @@ padding: 32px 0;}
 /* button  hero and portfolio */
 
 .hero-button:hover,
-.hero-button:focus{ color: var(--primaty-text-color); }
+.hero-button:focus{ background-color: var(--secondary-background-color-hero-butto); }
 
 
 .hero-button{font-family: inherit;
@@ -137,7 +140,9 @@ padding: 32px 0;}
     margin-right: auto;
     display: block;
     border-radius: 4px;
-    letter-spacing: 0.06em;background-color: var(--button-primary-background-color);
+    border: 0px solid transparent;
+    letter-spacing: 0.06em;
+    background-color: var(--button-primary-background-color);
     color: var(--white-text-color)}
 
   .button-portfolio {font-family: inherit;
@@ -229,7 +234,8 @@ text-align: center;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-  margin-top: 10px;}
+  margin-top: 10px;
+color: var(--second-text-color);}
 
   .team-p{
     padding: 30px;
@@ -238,7 +244,9 @@ text-align: center;
 
 /* footer */
 
-.logo-cellar{margin-bottom: 20px;}
+.logo-cellar{
+  width: fit-content;
+  margin-bottom: 20px;}
 
 
 .cellar{
@@ -309,24 +317,16 @@ padding-right: 0;
 
 
 .element-portfolio{
-  outline: 1px solid var(--second-background-color);
+  /* outline: 1px solid var(--second-background-color); */
 }
 
-.portfolio-content{padding: 20px 24px;}
+.portfolio-content{padding: 20px 24px;
+/* border: 1px solid var(--second-background-color); */
+border-bottom: 1px solid var(--second-background-color) ;
+border-left: 1px solid var(--second-background-color) ;
+border-right: 1px solid var(--second-background-color) ;
+}
 
 
-/* .portfolio-subtitle{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em} */
-
-    /* .portfolio-text{
-font-size: 16px;
-line-height: 1.88;
-color: var(--second-text-color);
-    } */
-
-    
   
 
